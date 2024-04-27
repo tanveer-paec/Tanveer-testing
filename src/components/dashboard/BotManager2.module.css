@@ -1,0 +1,846 @@
+.icon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  display: none;
+  z-index: 1;
+}
+.banner,
+.frameChild {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner {
+  left: 0;
+  background-color: var(--color-gray);
+  z-index: 1;
+}
+.frameChild {
+  left: calc(50% - 620px);
+  border-radius: var(--br-mini);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-cadetblue-200);
+  box-sizing: border-box;
+  display: none;
+}
+.botManager1 {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  font-size: var(--font-size-5xl);
+  letter-spacing: -0.01em;
+  line-height: 150%;
+  font-weight: 600;
+  font-family: var(--small-text);
+  z-index: 3;
+}
+.bellIcon,
+.coins {
+  position: absolute;
+  top: 254px;
+  overflow: hidden;
+  z-index: 3;
+}
+.bellIcon {
+  left: 40px;
+  width: 24px;
+  height: 24px;
+}
+.coins {
+  left: 80px;
+  font-size: var(--small-text-size);
+  line-height: 150%;
+  font-weight: 500;
+  font-family: var(--small-text);
+  color: var(--color-cadetblue-100);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.searchIcon {
+  top: 190px;
+  left: 40px;
+  width: 24px;
+  height: 24px;
+}
+.homeIcon,
+.searchIcon,
+.settings {
+  position: absolute;
+  overflow: hidden;
+  z-index: 3;
+}
+.settings {
+  top: 190px;
+  left: 80px;
+  font-size: var(--small-text-size);
+  line-height: 150%;
+  font-weight: 500;
+  font-family: var(--small-text);
+  color: var(--color-gainsboro-300);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.homeIcon {
+  top: 126px;
+  left: 40px;
+  width: 24px;
+  height: 24px;
+}
+.frameItem,
+.rectangleWrapper {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-mini);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-cadetblue-200);
+  box-sizing: border-box;
+}
+.frameItem {
+  width: 100%;
+  display: none;
+}
+.rectangleWrapper {
+  bottom: 0;
+  width: 226px;
+  z-index: 1;
+}
+.coinsActive,
+.main {
+  position: absolute;
+  top: 126px;
+  font-family: var(--small-text);
+  z-index: 3;
+}
+.main {
+  left: 80px;
+  font-size: var(--small-text-size);
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--color-gainsboro-300);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.coinsActive {
+  margin: 0;
+  left: 326px;
+  font-size: var(--font-size-9xl);
+  letter-spacing: -0.02em;
+  line-height: 31px;
+  font-weight: 600;
+}
+.frameInner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-cadetblue-100);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.saveChanges {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  line-height: 150%;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 95px;
+  z-index: 1;
+}
+.rectangleGroup {
+  position: absolute;
+  top: 119px;
+  left: 1055px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-cadetblue-100);
+  width: 125px;
+  height: 48px;
+  z-index: 3;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  font-family: var(--small-text);
+}
+.controlElements,
+.shiba {
+  position: absolute;
+  top: 227px;
+  z-index: 3;
+}
+.controlElements {
+  margin: 0;
+  left: 326px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba {
+  left: 372px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements1,
+.doge {
+  position: absolute;
+  top: 297px;
+  z-index: 3;
+}
+.controlElements1 {
+  margin: 0;
+  left: 326px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.doge {
+  left: 372px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 57px;
+}
+.controlElements2,
+.shiba1 {
+  position: absolute;
+  top: 367px;
+  z-index: 3;
+}
+.controlElements2 {
+  margin: 0;
+  left: 326px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba1 {
+  left: 372px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements3,
+.shiba2 {
+  position: absolute;
+  top: 437px;
+  z-index: 3;
+}
+.controlElements3 {
+  margin: 0;
+  left: 326px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba2 {
+  left: 372px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements4,
+.shiba3 {
+  position: absolute;
+  top: 507px;
+  z-index: 3;
+}
+.controlElements4 {
+  margin: 0;
+  left: 326px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba3 {
+  left: 372px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements5,
+.shiba4 {
+  position: absolute;
+  top: 577px;
+  z-index: 3;
+}
+.controlElements5 {
+  margin: 0;
+  left: 326px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba4 {
+  left: 372px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.coin1,
+.controlElements6 {
+  position: absolute;
+  top: 227px;
+  z-index: 3;
+}
+.controlElements6 {
+  margin: 0;
+  left: 491px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.coin1 {
+  left: 537px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements7,
+.from {
+  position: absolute;
+  top: 297px;
+  z-index: 3;
+}
+.controlElements7 {
+  margin: 0;
+  left: 491px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.from {
+  left: 537px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 57px;
+}
+.controlElements8,
+.shiba5 {
+  position: absolute;
+  top: 367px;
+  z-index: 3;
+}
+.controlElements8 {
+  margin: 0;
+  left: 491px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba5 {
+  left: 537px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements9,
+.shiba6 {
+  position: absolute;
+  top: 437px;
+  z-index: 3;
+}
+.controlElements9 {
+  margin: 0;
+  left: 491px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba6 {
+  left: 537px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements10,
+.shiba7 {
+  position: absolute;
+  top: 507px;
+  z-index: 3;
+}
+.controlElements10 {
+  margin: 0;
+  left: 491px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba7 {
+  left: 537px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements11,
+.shiba8 {
+  position: absolute;
+  top: 577px;
+  z-index: 3;
+}
+.controlElements11 {
+  margin: 0;
+  left: 491px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba8 {
+  left: 537px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements12,
+.yaml {
+  position: absolute;
+  top: 227px;
+  z-index: 3;
+}
+.controlElements12 {
+  margin: 0;
+  left: 656px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.yaml {
+  left: 702px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 54px;
+}
+.controlElements13,
+.file {
+  position: absolute;
+  top: 297px;
+  z-index: 3;
+}
+.controlElements13 {
+  margin: 0;
+  left: 656px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.file {
+  left: 702px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 40px;
+}
+.controlElements14,
+.shiba9 {
+  position: absolute;
+  top: 367px;
+  z-index: 3;
+}
+.controlElements14 {
+  margin: 0;
+  left: 656px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba9 {
+  left: 702px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements15,
+.shiba10 {
+  position: absolute;
+  top: 437px;
+  z-index: 3;
+}
+.controlElements15 {
+  margin: 0;
+  left: 656px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba10 {
+  left: 702px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements16,
+.shiba11 {
+  position: absolute;
+  top: 507px;
+  z-index: 3;
+}
+.controlElements16 {
+  margin: 0;
+  left: 656px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba11 {
+  left: 702px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements17,
+.shiba12 {
+  position: absolute;
+  top: 577px;
+  z-index: 3;
+}
+.controlElements17 {
+  margin: 0;
+  left: 656px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba12 {
+  left: 702px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements18,
+.on {
+  position: absolute;
+  top: 227px;
+  z-index: 3;
+}
+.controlElements18 {
+  margin: 0;
+  left: 821px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.on {
+  left: 867px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 30px;
+}
+.controlElements19,
+.server {
+  position: absolute;
+  top: 297px;
+  z-index: 3;
+}
+.controlElements19 {
+  margin: 0;
+  left: 821px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.server {
+  left: 867px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 75px;
+}
+.controlElements20,
+.shiba13 {
+  position: absolute;
+  top: 367px;
+  z-index: 3;
+}
+.controlElements20 {
+  margin: 0;
+  left: 821px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba13 {
+  left: 867px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements21,
+.shiba14 {
+  position: absolute;
+  top: 437px;
+  z-index: 3;
+}
+.controlElements21 {
+  margin: 0;
+  left: 821px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba14 {
+  left: 867px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements22,
+.shiba15 {
+  position: absolute;
+  top: 507px;
+  z-index: 3;
+}
+.controlElements22 {
+  margin: 0;
+  left: 821px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba15 {
+  left: 867px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements23,
+.shiba16 {
+  position: absolute;
+  top: 577px;
+  z-index: 3;
+}
+.controlElements23 {
+  margin: 0;
+  left: 821px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba16 {
+  left: 867px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements24,
+.shiba17 {
+  position: absolute;
+  top: 227px;
+  z-index: 3;
+}
+.controlElements24 {
+  margin: 0;
+  left: 986px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba17 {
+  left: 1032px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements25,
+.shiba18 {
+  position: absolute;
+  top: 297px;
+  z-index: 3;
+}
+.controlElements25 {
+  margin: 0;
+  left: 986px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba18 {
+  left: 1032px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements26,
+.shiba19 {
+  position: absolute;
+  top: 367px;
+  z-index: 3;
+}
+.controlElements26 {
+  margin: 0;
+  left: 986px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba19 {
+  left: 1032px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements27,
+.shiba20 {
+  position: absolute;
+  top: 437px;
+  z-index: 3;
+}
+.controlElements27 {
+  margin: 0;
+  left: 986px;
+  border-radius: var(--br-9xs);
+  width: 30px;
+  height: 30px;
+}
+.shiba20 {
+  left: 1032px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements28,
+.shiba21 {
+  position: absolute;
+  top: 507px;
+  z-index: 3;
+}
+.controlElements28 {
+  left: 986px;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-cadetblue-100);
+  width: 30px;
+  height: 30px;
+}
+.shiba21 {
+  left: 1032px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.controlElements29,
+.shiba22 {
+  position: absolute;
+  top: 577px;
+  z-index: 3;
+}
+.controlElements29 {
+  left: 986px;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-cadetblue-100);
+  width: 30px;
+  height: 30px;
+}
+.shiba22 {
+  left: 1032px;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 59px;
+}
+.rectangleParent {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-mini);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-cadetblue-200);
+  box-sizing: border-box;
+  width: 1240px;
+  height: 670px;
+  z-index: 2;
+}
+.content {
+  align-self: stretch;
+  height: 1024px;
+  position: relative;
+  margin-top: -100px;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-abeezee);
+}
+.botManager,
+.parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.parent {
+  flex: 1;
+  flex-direction: column;
+  padding: 0 0 var(--padding-256xl);
+  box-sizing: border-box;
+  background-image: url(/public/1-5@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  max-width: 100%;
+}
+.botManager {
+  width: 100%;
+  height: 1024px;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: row;
+  letter-spacing: normal;
+  line-height: normal;
+}
+@media screen and (max-width: 1050px) {
+  .parent {
+    padding-bottom: var(--padding-160xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 725px) {
+  .parent {
+    padding-bottom: var(--padding-97xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .botManager1 {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+  .coinsActive {
+    font-size: var(--font-size-3xl);
+    line-height: 25px;
+  }
+  .coin1,
+  .doge,
+  .file,
+  .from,
+  .on,
+  .server,
+  .shiba,
+  .shiba1,
+  .shiba10,
+  .shiba11,
+  .shiba12,
+  .shiba13,
+  .shiba14,
+  .shiba15,
+  .shiba16,
+  .shiba17,
+  .shiba18,
+  .shiba19,
+  .shiba2,
+  .shiba20,
+  .shiba21,
+  .shiba22,
+  .shiba3,
+  .shiba4,
+  .shiba5,
+  .shiba6,
+  .shiba7,
+  .shiba8,
+  .shiba9,
+  .yaml {
+    font-size: var(--small-text-size);
+    line-height: 24px;
+  }
+}
