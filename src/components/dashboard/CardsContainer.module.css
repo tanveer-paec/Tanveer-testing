@@ -1,0 +1,23 @@
+.cardGrid,
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.cardGrid {
+  flex: 1;
+  flex-wrap: wrap;
+  gap: var(--gap-base);
+  z-index: 1;
+}
+.cardsContainer {
+  align-self: stretch;
+  padding: 0 var(--padding-4xs);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--small-text-size);
+  color: var(--color-white);
+  font-family: var(--small-text);
+}

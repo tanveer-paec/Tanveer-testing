@@ -1,0 +1,249 @@
+.frameChild {
+  width: 540px;
+  height: 526px;
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gray-200);
+  border: 6px solid var(--color-cadetblue-100);
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+}
+.createAnAccount,
+.enterYourEmail {
+  position: relative;
+  line-height: 150%;
+  z-index: 1;
+}
+.createAnAccount {
+  margin: 0;
+  width: 253px;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+}
+.enterYourEmail {
+  align-self: stretch;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-nunito);
+}
+.signupTitle {
+  width: 336px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-3xs);
+  box-sizing: border-box;
+  gap: var(--gap-9xs);
+  max-width: 100%;
+  font-size: var(--font-size-13xl);
+}
+.email {
+  position: relative;
+  display: inline-block;
+  min-width: 41px;
+  z-index: 1;
+}
+.emailAddress {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  line-height: 20px;
+  display: none;
+}
+.inputField {
+  align-self: stretch;
+  height: 40px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  border: 1px solid var(--color-cadetblue-100);
+  box-sizing: border-box;
+  z-index: 1;
+  font-size: var(--body-small-400-size);
+  color: var(--gray-500);
+  font-family: var(--body-small-400);
+}
+.emailInput {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+  max-width: 100%;
+  text-align: left;
+  font-family: var(--font-nunito);
+}
+.password {
+  width: 63px;
+  position: relative;
+  line-height: 20px;
+  display: none;
+}
+.signUpWith {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 150%;
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+}
+.inputField1 {
+  width: 460px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-cadetblue-200);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-xs) var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-5xs);
+  max-width: 100%;
+  z-index: 1;
+  text-align: left;
+  font-size: var(--body-small-400-size);
+  color: var(--gray-500);
+  font-family: var(--body-small-400);
+}
+.iconShapes {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  background-color: var(--color-gainsboro);
+  z-index: 1;
+}
+.socialIcons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs-5) 0 0;
+  box-sizing: border-box;
+  min-width: 91px;
+}
+.orContinueWith {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 123px;
+  z-index: 1;
+}
+.socialIconsChild {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  background-color: var(--color-gainsboro);
+  z-index: 1;
+}
+.socialIcons1,
+.socialLogin {
+  display: flex;
+  align-items: flex-start;
+}
+.socialIcons1 {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-xs-5) 0 0;
+  box-sizing: border-box;
+  min-width: 91px;
+}
+.socialLogin {
+  width: 459px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-9xl);
+  max-width: 100%;
+  font-family: var(--font-inter);
+}
+.googleIcon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.google {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 58px;
+}
+.loginregisterWith {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  border: 1px solid var(--color-cadetblue-100);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-base);
+  gap: var(--gap-mini);
+  z-index: 1;
+}
+.privacyPolicy,
+.termsOfService {
+  color: var(--color-white);
+}
+.byClickingContinueContainer {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  font-family: var(--font-inter);
+  z-index: 1;
+  color: var(--color-gray-100);
+}
+.googleLogin,
+.rectangleParent {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  max-width: 100%;
+  color: var(--color-cadetblue-100);
+  font-family: var(--font-montserrat);
+}
+.rectangleParent {
+  width: 540px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gray-200);
+  border: 6px solid var(--color-cadetblue-100);
+  box-sizing: border-box;
+  padding: var(--padding-14xl) var(--padding-15xl);
+  gap: var(--gap-11xl);
+  z-index: 2;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-sf-pro);
+}
+@media screen and (max-width: 1050px) {
+  .createAnAccount {
+    font-size: var(--font-size-7xl);
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .rectangleParent {
+    gap: var(--gap-mini);
+    padding-top: var(--padding-2xl);
+    padding-bottom: var(--padding-2xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .createAnAccount {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+}
