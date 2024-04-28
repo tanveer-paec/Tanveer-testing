@@ -4,7 +4,7 @@ import { Link, useNavigation } from "react-router-dom";
 import axios from "axios";
 
 const GroupComponentCreateNewAccount = () => {
-  const [credentials, setCredentials] = useState({email: "", password: "", username:""})
+  const [credentials, setCredentials] = useState({email: "", password: "", username:"", verification_code: ""})
   const [step, setStep] = useState(1);
  // const navigate = useNavigation();
   
@@ -25,23 +25,40 @@ const GroupComponentCreateNewAccount = () => {
       // You can perform any validation before proceeding to the next step
   
       // If it's the final step, submit the form data to the backend API
-      if (step === 3) {
+      if (step === 2) {
         // Submit form data to backend API
+        const credentials_signup = {email: credentials.email, username: credentials.username, password: credentials.password}
         console.log('Submitting form data to backend API');
-        axios.post('http://localhost:8000/users/', credentials)
+        axios.post('http://localhost:8000/users/', credentials_signup)
         .then(res => {
           console.log(res)
          // history.push('/login');
         }).catch(err => {
           console.log(err)
         })
-        // Reset form fields
+        
+      } else {
+        // Otherwise, proceed to the next step
+        handleNextStep();
+      }
+
+      if (step === 3) {
+        // Submit form data to backend API
+        const credentials_verification = {email: credentials.email, verification_code: credentials.verification_code}
+        console.log('credentials_verification', credentials_verification);
+        axios.post('http://localhost:8000/verify/', credentials_verification)
+        .then(res => {
+          console.log(res)
+         // history.push('/login');
+        }).catch(err => {
+          console.log(err)
+        })     
+        // Reset Fields
         setCredentials({
           username: '',
           email: '',
           password: ''
-        })
-        
+        })   
       } else {
         // Otherwise, proceed to the next step
         handleNextStep();
@@ -174,7 +191,7 @@ const GroupComponentCreateNewAccount = () => {
       <div className={styles.emailInput}>
         <div className={styles.email}>Enter Code</div>
         <div className={styles.inputField}>
-        <input  className={styles.inputField} style={{display: "inline-block", minWidth: "100%", background: "rgba(0, 0, 0, 0.2)", paddingLeft: "10px"}}  id="code" name="code" onChange={onChange}/>
+        <input  className={styles.inputField} style={{display: "inline-block", minWidth: "100%", background: "rgba(0, 0, 0, 0.2)", paddingLeft: "10px"}}  id="verification_code" name="verification_code" onChange={onChange}/>
           <div className={styles.emailAddress}>
 </div>
         </div>
