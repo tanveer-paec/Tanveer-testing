@@ -1,18 +1,34 @@
 import { useState } from "react";
 import styles from "../signup/GroupComponentCreateNewAccount.module.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const GroupComponentCreateNewAccount = () => {
-  const [credentials, setCredentials] = useState({email: ""})
-  const onChange = (e)=>{
-    setCredentials({...credentials, [e.target.name]: e.target.value})
-    console.log(credentials)}
-    const submit = ()=> {
-      console.log(credentials)
+  const [credentials, setCredentials] = useState({ email: "", password: "" });
+  const onChange = (e) => {
+    setCredentials({ ...credentials, [e.target.name]: e.target.value });
+    console.log(credentials);
+  };
+  const submit = async () => {
+    // console.log(credentials);
+    try {
+      const response = await axios.post("http://localhost:8000/login/", credentials);
+      if (response.status === 200) {
+        // Assuming the access token is returned in the response
+        const accessToken = response.data.access_token;
+        // Store access token in sessionStorage
+        sessionStorage.setItem('accessToken', accessToken);
+        console.log('Login successful');
+      } else {
+        console.log('Login failed');
+      }
+    } catch (error) {
+      console.log("Token or Login Error", error);
     }
+  };
 
   return (
-    <div className={styles.rectangleParent} style={{ }}>
+    <div className={styles.rectangleParent} style={{}}>
       <div className={styles.frameChild} />
       <div className={styles.signupTitle}>
         <h1 className={styles.createAnAccount}>Login</h1>
@@ -23,9 +39,22 @@ const GroupComponentCreateNewAccount = () => {
       <div className={styles.emailInput}>
         <div className={styles.email}>Email</div>
         <div className={styles.inputField}>
-        <input type="email" className={styles.inputField} style={{display: "inline-block", minWidth: "100%", background: "rgba(0, 0, 0, 0.2)", paddingLeft: "10px"}} placeholder="name@example.com" defaultValue="mdo@example.com" id="email" name="email" onChange={onChange}/>
-          <div className={styles.emailAddress}>
-</div>
+          <input
+            type="email"
+            className={styles.inputField}
+            style={{
+              display: "inline-block",
+              minWidth: "100%",
+              background: "rgba(0, 0, 0, 0.2)",
+              paddingLeft: "10px",
+            }}
+            placeholder="name@example.com"
+            defaultValue="mdo@example.com"
+            id="email"
+            name="email"
+            onChange={onChange}
+          />
+          <div className={styles.emailAddress}></div>
         </div>
       </div>
 
@@ -41,14 +70,20 @@ const GroupComponentCreateNewAccount = () => {
               background: "rgba(0, 0, 0, 0.2)",
               paddingLeft: "10px",
             }}
-            id="pass"
-            name="pass"
+            id="password"
+            name="password"
             onChange={onChange}
           />
           <div className={styles.emailAddress}></div>
         </div>
       </div>
-      <Link role="button" to="/signup1" className={styles.inputField1} onClick={submit} style={{border: "var(--color-cadetblue-200)"}}>
+      <Link
+        role="button"
+        to="/dashboard"
+        className={styles.inputField1}
+        onClick={submit}
+        style={{ border: "var(--color-cadetblue-200)" }}
+      >
         <div className={styles.password}>Password</div>
         <div className={styles.signUpWith}>Sign In</div>
       </Link>

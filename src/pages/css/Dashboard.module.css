@@ -122,6 +122,39 @@
   color: var(--color-gainsboro-200);
   font-family: var(--font-courier-prime);
 }
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+th:first-child {
+  border-left: 2px solid black;
+}
+
+th:last-child {
+  border-right: 2px solid black;
+}
+
+td:first-child {
+  border-left: 2px solid black;
+}
+
+td:last-child {
+  border-right: 2px solid black;
+}
+
 @media screen and (max-width: 1050px) {
   .dashboard {
     height: auto;
