@@ -4,6 +4,7 @@ import {
   Route,
   useNavigationType,
   useLocation,
+  BrowserRouter,
 } from "react-router-dom";
 import HOME from "./pages/HOME";
 import CreateNewAccount from "./pages/CreateNewAccount";
@@ -56,6 +57,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HOME />} />
+
       <Route path="/signup" element={<CreateNewAccount />} />
       <Route path="/signup2" element={<EmailConfirmation />} />
       <Route path="/signup1" element={<CreatePassword />} />
@@ -65,8 +67,8 @@ function App() {
       <Route path="/botmanager" element={<BotManager />} />
       <Route path="/botmanager1" element={<BotManager1 />} />
       <Route path="/botmanager2" element={<BotManager2 />} />
-
     </Routes>
+   
   );
 }
 export default App;
