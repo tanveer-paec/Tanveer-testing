@@ -13,6 +13,7 @@ import CreatePassword from "./components/signup/signup2/CreatePassword";
 import API from "./components/signup/signup2/API";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
+import Dashboard1 from "./pages/Dashboard1";
 import BotManager from "./components/dashboard/BotManager";
 import BotManager1 from "./components/dashboard/BotManager1";
 import BotManager2 from "./components/dashboard/BotManager2";
@@ -64,6 +65,7 @@ function App() {
       <Route path="/signup3" element={<API />} />
       <Route path="/login" element={<Login />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/dashboard1" element={<Dashboard1 />} />
       <Route path="/botmanager" element={<BotManager />} />
       <Route path="/botmanager1" element={<BotManager1 />} />
       <Route path="/botmanager2" element={<BotManager2 />} />

@@ -79,12 +79,11 @@ const GroupComponentCreateNewAccount = () => {
       </div>
       <Link
         role="button"
-        to="/dashboard"
+        to="/dashboard1"
         className={styles.inputField1}
         onClick={submit}
         style={{ border: "var(--color-cadetblue-200)" }}
       >
-        <div className={styles.password}>Password</div>
         <div className={styles.signUpWith}>Sign In</div>
       </Link>
       <div className={styles.socialLogin}>

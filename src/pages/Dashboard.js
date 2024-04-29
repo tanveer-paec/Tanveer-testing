@@ -47,7 +47,7 @@ const Dashboard = () => {
         <img className={styles.icon} alt="" src="/1-5@2x.png" />
         <section className={styles.headerGraphics} GF />
       </main>
-      <GroupComponentDashboard />
+      
       <div className={styles.mainContent}>
         <div className={styles.rectangleParent}>
           <div className={styles.frameChild} />

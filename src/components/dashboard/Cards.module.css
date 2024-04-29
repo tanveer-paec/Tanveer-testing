@@ -35,9 +35,9 @@
   flex-direction: row;
   min-width: 273px;
   text-align: left;
-  font-size: var(--small-text-size);
+  font-size: var(--font-size-base);
   color: var(--color-white);
-  font-family: var(--small-text);
+  font-family: var(--font-nunito);
 }
 @media screen and (max-width: 1050px) {
   .dataValues {

@@ -41,6 +41,7 @@ body {
   --gray-500: #77878f;
   --color-cadetblue-200: rgba(28, 158, 181, 0.95);
   --color-cadetblue-100: #1c9eb5;
+  --color-steelblue: #2a7b96;
 
   /* Gaps */
   --gap-6xl: 25px;
