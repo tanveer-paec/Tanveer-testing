@@ -16,9 +16,14 @@ const GroupComponentDashboard = ({ groupHeaderPadding, groupHeaderWidth }) => {
   useEffect(() => {
     // Fetch user information and dashboard data from the backend API
     const fetchDashboardData = async () => {
+      const accessToken = sessionStorage.getItem('accessToken');
+      if (!accessToken) {
+        // If access token is not available, wait and retry after 1 second
+        setTimeout(fetchDashboardData, 1000);
+        return;
+      }
       try {
         // Make a POST request to fetch user information
-        const accessToken = sessionStorage.getItem('accessToken');
         console.log(accessToken)
         const userResponse = await axios.get(`http://127.0.0.1:8000/verify_t/${accessToken}/`, {
           headers: {
