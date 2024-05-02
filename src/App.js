@@ -17,6 +17,7 @@ import Dashboard1 from "./pages/Dashboard1";
 import BotManager from "./components/dashboard/BotManager";
 import BotManager1 from "./components/dashboard/BotManager1";
 import BotManager2 from "./components/dashboard/BotManager2";
+import Settings from "./components/dashboard/Settings";
 
 
 function App() {
@@ -56,9 +57,8 @@ function App() {
   }, [pathname]);
 
   return (
-    <Routes>
+   <Routes>
       <Route path="/" element={<HOME />} />
-
       <Route path="/signup" element={<CreateNewAccount />} />
       <Route path="/signup2" element={<EmailConfirmation />} />
       <Route path="/signup1" element={<CreatePassword />} />
@@ -69,7 +69,9 @@ function App() {
       <Route path="/botmanager" element={<BotManager />} />
       <Route path="/botmanager1" element={<BotManager1 />} />
       <Route path="/botmanager2" element={<BotManager2 />} />
+      <Route path="/settings" element={<Settings />} />
     </Routes>
+   
    
   );
 }

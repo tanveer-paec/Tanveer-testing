@@ -5,15 +5,14 @@ import styles from "./BotManager.module.css";
 
 const BotManager = () => {
   return (
+    
     <div className={styles.botManager}>
       <main className={styles.parent}>
         <img className={styles.icon} alt="" src="/1-5@2x.png" />
-        <GroupComponentDashboard
-          groupHeaderPadding="var(--padding-mid) var(--padding-81xl)"
-          groupHeaderWidth="unset"
-        />
+        
         <section className={styles.pageBody}>
           <div className={styles.heroImage} />
+          <div className="container">
           <div className={styles.rectangleParent}>
             <div className={styles.frameChild} />
             <div className={styles.header}>
@@ -73,9 +72,12 @@ const BotManager = () => {
             </form>
             <h2 className={styles.mainSettings}>Main Settings</h2>
           </div>
+          </div>
         </section>
       </main>
     </div>
+    
+    
   );
 };
 

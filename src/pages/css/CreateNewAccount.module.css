@@ -45,6 +45,7 @@
   line-height: normal;
   letter-spacing: normal;
 }
+
 @media screen and (max-width: 750px) {
   .parent {
     gap: 50px;

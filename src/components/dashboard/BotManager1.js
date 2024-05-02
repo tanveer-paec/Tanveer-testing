@@ -160,7 +160,7 @@ const BotManager1 = () => {
               <div className={styles.walletRiskParent}>
                 <div className={styles.walletRisk}>Wallet Risk</div>
                 <div className={styles.div5}>150%</div>
-                <Box className={styles.container} sx={{ width: 180 }}>
+                <Box className={styles.container} sx={{ width: 150 }}>
                   <MuiSlider color="primary" min={0} max={200} orientation="horizontal" />
                 </Box>
               </div>
