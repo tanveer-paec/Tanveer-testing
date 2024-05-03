@@ -65,38 +65,7 @@ const GroupComponentDashboard = ({ groupHeaderPadding, groupHeaderWidth }) => {
   }, [groupHeaderPadding, groupHeaderWidth]);
 
   return (
-    <>
-<<<<<<< Updated upstream
-      <div
-        className="text-white text-center mx-auto"
-        style={{ marginTop: "-40px" }}
-      >
-        <h1>Welcome to the Dashboard {userData?.[1] ?? ""}</h1>
-      </div>
-      <div
-        className="container border"
-        style={{
-          borderRadius: "var(--br-mini)",
-          backgroundColor: "var(--color-gray-200)",
-          border: "2px solid var(--color-cadetblue-200) !important",
-        }}
-      >
-        <CardsContainer
-          accountBalance={dashboardData ? dashboardData[0] : "---"}
-          unrealizedPnL={dashboardData ? dashboardData[1] : "---"}
-          thirtyDayGain={dashboardData ? dashboardData[2] : "---"}
-          tableData={dashboardData ? dashboardData[3] : []}
-        />
-        <div className="container mb-4">
-          <Button className={styles.tag} name="REPORT" variant="primary">
-            REPORT
-          </Button>
-        </div>
-
-        <div className="container">
-          <div className="table-responsive">
-            <table className="table">
-=======
+    <div>
     <div className="text-white text-center mx-auto" style={{marginTop: "-120px"}}><h1>Welcome to the Dashboard {userData?.[1] ?? ""}</h1></div>
     <div className="container border" style={{borderRadius: "var(--br-mini)",
   backgroundColor: "var(--color-gray-200)", border: "2px solid var(--color-cadetblue-200) !important"}}>
@@ -105,19 +74,15 @@ const GroupComponentDashboard = ({ groupHeaderPadding, groupHeaderWidth }) => {
         unrealizedPnL={dashboardData?.[1] ?? ''}
         thirtyDayGain={dashboardData?.[2] ?? ''}
         tableData={dashboardData?.[3] ?? []}
-        // accountBalance={10000}
-        // unrealizedPnL={47000}
-        // thirtyDayGain={25000}
-        // tableData={15000}
+       
       />
       <div className="container mb-4">
         <Button className={styles.tag} name="REPORT" variant="primary">
           REPORT
         </Button>
-        {/* <div className="container border">
+        /* <div className="container border">
 <div className="table-responsive">
             <table>
->>>>>>> Stashed changes
               <thead>
                 <tr>
                   <th scope="col">Symbol</th>
@@ -157,7 +122,7 @@ const GroupComponentDashboard = ({ groupHeaderPadding, groupHeaderWidth }) => {
           </div>
         </div>
       </div>
-    </>
+    </div></div>
   );
 };
 
