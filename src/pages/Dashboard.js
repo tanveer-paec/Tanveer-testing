@@ -24,7 +24,7 @@ const Dashboard = () => {
         });
 
         // Make a POST request to fetch dashboard data
-        const dashboardResponse = await axios.post('http://localhost:8000/dashboard/', {
+        const dashboardResponse = await axios.post('http://44.210.216.10:8000/dashboard/', {
           email: userResponse.data.email,
           username: userResponse.data.username
         });

@@ -12,7 +12,7 @@ const GroupComponentCreateNewAccount = () => {
   const submit = async () => {
     // console.log(credentials);
     try {
-      const response = await axios.post("http://localhost:8000/login/", credentials);
+      const response = await axios.post("http://44.210.216.10:8000/login/", credentials);
       if (response.status === 200) {
         // Assuming the access token is returned in the response
         const accessToken = response.data.access_token;

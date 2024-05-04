@@ -29,7 +29,7 @@ const GroupComponentCreateNewAccount = () => {
         // Submit form data to backend API
         const credentials_signup = {email: credentials.email, username: credentials.username, password: credentials.password}
         console.log('Submitting form data to backend API');
-        axios.post('http://localhost:8000/users/', credentials_signup)
+        axios.post('http://44.210.216.10:8000/users/', credentials_signup)
         .then(res => {
           console.log(res)
          // history.push('/login');
@@ -46,7 +46,7 @@ const GroupComponentCreateNewAccount = () => {
         // Submit form data to backend API
         const credentials_verification = {email: credentials.email, verification_code: credentials.verification_code}
         console.log('credentials_verification', credentials_verification);
-        axios.post('http://localhost:8000/verify/', credentials_verification)
+        axios.post('http://44.210.216.10:8000/verify/', credentials_verification)
         .then(res => {
           console.log(res)
          // history.push('/login');
@@ -66,7 +66,7 @@ const GroupComponentCreateNewAccount = () => {
     };
     
     // const submit = ()=> {
-    //   axios.get('http://localhost:8000/users/')
+    //   axios.get('http://44.210.216.10:8000/users/')
     //   .then(res=> {
     //     console.log(res)
     //   }).catch(err=> {
