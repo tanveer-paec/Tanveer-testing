@@ -17,7 +17,7 @@ const Dashboard = () => {
         // Make a POST request to fetch user information
         const accessToken = sessionStorage.getItem('accessToken');
         console.log(accessToken)
-        const userResponse = await axios.get(`http://127.0.0.1:8000/verify_t/${accessToken}/`, {
+        const userResponse = await axios.get(`http://44.210.216.10:8000/verify_t/${accessToken}/`, {
           headers: {
             Authorization: `Bearer ${accessToken}`
           }
